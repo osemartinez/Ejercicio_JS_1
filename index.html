@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de área de rectángulo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+
+        body {
+            background-color: #11020213; 
+            font-family: Arial, sans-serif; 
+        }
+        .container {
+            background-color: #b69c9c02;
+            padding: 20px;
+            border-radius: 10px; 
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); 
+            max-width: 400px;
+            margin: auto; 
+            margin-top: 50px; 
+        }
+        h1 {
+            color: #8f2aee; 
+            text-align: center; 
+            margin-bottom: 30px; 
+        }
+        .btn-primary {
+            background-color: #8f2aee;
+            border-color: #630eb3;
+            width: 100%; 
+            margin-top: 20px;
+        }
+        .btn-primary:hover {
+            background-color: #6c05cc;
+            border-color: #a452f1;
+        }
+        .btn-secondary {
+            background-color: #6c757d;
+            border-color: #6c757d;
+            width: 100%; 
+            margin-top: 10px; 
+        }
+        .btn-secondary:hover {
+            background-color: #5a6268;
+            border-color: #545b62;
+        }
+        .form-group label {
+            color: #343a40; 
+        }
+        .form-control {
+            border-radius: 5px; 
+        }
+        #result {
+            margin-top: 20px; 
+            text-align: center; 
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de área de rectángulo</h1>
+        <form id="rectangle-form">
+            <div class="form-group">
+                <label for="base">Base (b):</label>
+                <input type="number" class="form-control" id="base" required>
+            </div>
+            <div class="form-group">
+                <label for="height">Altura (h):</label>
+                <input type="number" class="form-control" id="height" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Calcular Área</button>
+            <button type="button" class="btn btn-secondary" id="clear-btn">Limpiar Campos</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
